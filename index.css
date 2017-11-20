@@ -13,32 +13,84 @@ li {
   list-style: none;
 }
 
+li:hover {
+    border-bottom: 1px solid #6799ff;
+}
+
 a {
   color: #6799ff;
   text-decoration: none;
 }
+.nav-list {
+    font-size: 20px;
+}
+
+/* a:hover {
+    color: darkblue;
+    /* border-bottom: 5px solid red; */
+  } */
 
 .sign-in {
   /*background-color: rgb(70, 162, 90);*/
   display: block;
 }
 
+img {
+   width: 74px;
+ 
+}
+
+.image-names {
+        display: block;
+        -webkit-margin-before: 1.33em;
+        -webkit-margin-after: 1.33em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+        text-align: center;
+    
+}
+
+
 .navbar {
-  /*background-color: rgb(217, 221, 31);*/
+  /* background-color: rgb(217, 221, 31); */
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  align-items: center;
+  /* flex-direction: row; */
 }
 
 .courses-dropdown {
   display: none;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  
+}
+
+.courses-list {
+    background-color: azure;
+    display: flex !important;
+    flex-direction: row;
+   justify-content: space-around;
+   /* justify-content: center; */
+   padding: 250px;
+   height: 200px;
+   
+
 }
 
 .how-works-dropdown {
   display: none;
+}
+
+.how-works-list {
+    background-color: azure;
+    display: flex !important;
+    flex-direction: row;
+   justify-content: space-between;
+   /* justify-content: center; */
+   padding: 250px;
+   
+
 }
 
 /*.container {
