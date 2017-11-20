@@ -13,15 +13,22 @@ li {
   list-style: none;
 }
 
+li:hover {
+    border-bottom: 1px solid #6799ff;
+}
+
 a {
   color: #6799ff;
   text-decoration: none;
 }
+.nav-list {
+    font-size: 20px;
+}
 
-a:hover {
-    color: red;
-    text-decoration: underline;
-  }
+/* a:hover {
+    color: darkblue;
+    /* border-bottom: 5px solid red; */
+  } */
 
 .sign-in {
   /*background-color: rgb(70, 162, 90);*/
@@ -51,7 +58,6 @@ img {
   justify-content: space-around;
   flex-flow: row wrap;
   /* flex-direction: row; */
-  padding-bottom: 20px;
 }
 
 .courses-dropdown {
@@ -67,6 +73,7 @@ img {
    justify-content: space-around;
    /* justify-content: center; */
    padding: 250px;
+   height: 200px;
    
 
 }
