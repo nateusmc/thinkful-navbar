@@ -9,6 +9,7 @@
   </head>
   <body>
     <!-- Hamburger button -->
+    <div class="container">
     <div class="hamburger">
       <div class="hamburger-stripe"></div>
       <div class="hamburger-stripe"></div>
@@ -16,6 +17,8 @@
     </div>
 
     <!-- Thinkful logo -->
+    <nav class="nav">
+    <ul class="navbar">
     <svg xmlns="http://www.w3.org/2000/svg" width="136" height="28">
       <g fill="#6799ff" fill-rule="evenodd">
         <path d="M9 20h3V8H3V3h17V0H0v11h9v9z"></path>
@@ -24,13 +27,13 @@
     </svg>
 
     <!-- Main menu -->
-    <nav>
-      <ul>
+
+
         <li>
-          <a href="#">
+          <a href="#" class="courses-dropdown-button">
             Courses
           </a>
-          <nav>
+          <nav class="courses-dropdown">
             <ul>
               <li>
                 <a href="#">
@@ -54,10 +57,10 @@
           </nav>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="how-works-dropdown-button">
             How it works
           </a>
-          <nav>
+          <nav class="how-works-dropdown">
             <ul>
               <li>
                 <a href="#">
@@ -96,12 +99,30 @@
             Pricing
           </a>
         </li>
+
+
+
+        <div class="sign-in">
         <li>
           <a href="#">
             Sign in
           </a>
         </li>
-      </ul>
+      </div>
+
     </nav>
-  </body>
+    </ul>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script type="text/javascript">$(".courses-dropdown-button").click(function(){ $(".courses-dropdown").toggle(); });
+    </script>
+
+    <script type="text/javascript">$(".how-works-dropdown-button").click(function(){ $(".how-works-dropdown").toggle(); });
+    </script>
+
+    </body>
 </html>
